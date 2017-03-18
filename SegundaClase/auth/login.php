@@ -2,8 +2,10 @@
 	
 	
 	session_start();
-	$_SESSION['correo'];
+
 	if(isset($_POST['correo']) && isset($_POST['password'] ) ){
+
+			$_SESSION['correo']='';
 		#echo "Entraste y si existen tus variables";
 		include('../conexion/conexion.php');
 		$sql="SELECT * FROM Usuario where correo='".$_POST['correo']."'";
