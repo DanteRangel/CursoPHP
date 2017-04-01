@@ -55,8 +55,8 @@ require('Conexion.php');
 			$arreglo=array();
 			$i=0;
 			while($row=$resultado->fetch_assoc()){
-				$i++;
 				$arreglo[$i]=$row;
+				$i++;
 			}
 			return $arreglo;
 		}
@@ -70,8 +70,14 @@ require('Conexion.php');
 		}
 		public function delete($id){
 			$sql="DELETE FROM $this->table WHERE id=$id;";
-			$this->con->query($sql);
+			return $this->con->query($sql);
 
+		}
+
+		public function deleteMe(){
+			
+
+			return $this->delete($this->id);
 		}
 		public function nombre($nombre){
 			$this->nombre=$nombre;

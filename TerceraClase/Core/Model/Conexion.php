@@ -7,7 +7,7 @@
 		public $driver;
 		public $con;
 		public function __construct(){
-			$env=require APP_PATH.'/config/database.php';
+			$env=require './config/database.php';
 			$this->driver=$env['driver'];
 			$this->database=$env['database'];
 			$this->user=$env['user'];
