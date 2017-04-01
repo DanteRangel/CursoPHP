@@ -1,4 +1,5 @@
 <?php 
+include (APP_View.'Layouts/Layout.php');
 
 		$html='';
 
