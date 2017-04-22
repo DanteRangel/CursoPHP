@@ -87,6 +87,10 @@ require('Conexion.php');
 			$this->tipo_usuario=$tipo_usuario;
 			return $this->tipo_usuario;
 		}
+		public function password($password){
+			$this->password=md5($password);
+			return $this->password;
+		}
 
 	}
 

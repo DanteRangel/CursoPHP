@@ -151,4 +151,5 @@ print_r($_SESSION['carrito']);
 //print_r($carrito->carrito);
 return  ;
 */
+return new Carrito();
 ?>

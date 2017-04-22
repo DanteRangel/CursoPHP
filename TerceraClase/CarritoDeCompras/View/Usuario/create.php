@@ -16,13 +16,13 @@
 			<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
 				<div class="form-group">
 					<label for="">Password</label>
-					<input type="text" class="form-control" name="password">
+					<input type="password" class="form-control" name="password">
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
 				<div class="form-group">
 					<label for="">Confirmar Password</label>
-					<input type="text" class="form-control" name="confirm_password">
+					<input type="password" class="form-control" name="confirm_password">
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">

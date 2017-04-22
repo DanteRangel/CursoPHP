@@ -28,17 +28,17 @@
 			cantidad=$('#input_'+id).val();
 			precio=$('#input_'+id).attr('data-precio');
 
-			alert('id = '+id+ ' cantidad = ' + cantidad+' precio = '+precio+ ' total = '+(cantidad*precio));
+//			alert('id = '+id+ ' cantidad = ' + cantidad+' precio = '+precio+ ' total = '+(cantidad*precio));
 			$.ajax({
-				url:'form_User.php',
+				url:'?controller=Carrito&metodo=addProduct',
 				data:{
 					'id':id,
-					'cantidad':cantidad,
-					'petition':'addProduct'
+					'cantidad':cantidad
 				},
 				type:'POST',
 				success:function(response){
-
+					console.log(response);
+					window.location="?controller=Carrito&metodo=getCarrito";
 				}
 			});
 		}

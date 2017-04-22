@@ -57,6 +57,12 @@
                       <li><a href="?controller=Producto&metodo=index">Gestionar Productos</a></li>
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-th"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="?controller=Usuarios&metodo=create">Crear Producto</a></li>
+                      <li><a href="?controller=Usuarios&metodo=index">Gestionar Productos</a></li>
+                    </ul>
+                  </li>
                   <li><a><i class="fa fa-shopping-cart"></i> Carrito de Compras <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu" style="display:none;">
                       <li><a href="?controller=Carrito&metodo=index">Productos</a></li>

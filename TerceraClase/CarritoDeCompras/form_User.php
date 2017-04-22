@@ -1,4 +1,4 @@
-<?php 
+<?php  
 	if(isset($_POST['id']) && isset($_POST['get_user']) && $_POST['get_user']==true){
 	require('config/config.php');
 	require('Core/Model/Usuario.php');
