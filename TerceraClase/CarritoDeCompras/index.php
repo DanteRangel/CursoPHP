@@ -6,6 +6,7 @@
 		$controller=include(APP_Controller.$_REQUEST['controller'].'Controller.php');
 		$metodo=$_REQUEST['metodo'];
 		if(method_exists($controller, $metodo)){
+			
 			$controller->$metodo($_REQUEST);
 			//$controller->update($_REQUEST);
 		}else{
