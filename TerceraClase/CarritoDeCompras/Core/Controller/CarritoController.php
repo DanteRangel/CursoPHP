@@ -29,6 +29,11 @@ class CarritoController{
 			$this->carrito->add($add);
 			}
 		}
+		public function delete($request){
+			if(isset($_POST['id'])){
+				$this->carrito->deleteItem($_POST['id']);
+			}
+		}
 
 
 }

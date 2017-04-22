@@ -10,6 +10,7 @@
     <title>Carrito de Compras </title>
 
     <!-- Bootstrap -->
+    <script src="assets/js/jquery.min.js"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
